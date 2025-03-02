@@ -1,32 +1,77 @@
-# 🚀 Network Traffic Anomaly Detector  
+# 🚀 Network Traffic Anomaly Detector
 
-A real-time **network monitoring tool** that detects **unusual traffic patterns** and potential threats.  
+A real-time **network monitoring tool** that detects unusual traffic patterns and potential threats. It captures packets, analyzes their sizes, and alerts the user when anomalies are detected.
 
-## 📌 Overview  
-This tool captures network packets, extracts key features, and identifies anomalies based on statistical thresholds. It includes a **user-friendly GUI** that displays real-time alerts and logs detected threats.  
+---
 
-## 🛠️ Technologies Used  
-- **Python** – Tkinter (GUI), Scapy (packet sniffing), Joblib (data processing)  
-- **Networking** – Real-time packet capture & analysis  
-- **Data Processing** – Anomaly detection using statistical methods  
+## 📌 Features
+✅ **Live Network Packet Capture** – Uses Scapy for real-time monitoring.  
+✅ **Threat Alerts** – Provides alerts with severity levels (Low, Medium, High).  
+✅ **User-Friendly GUI** – Built with Tkinter for easy interaction.  
+✅ **Logging System** – Saves detected anomalies for analysis.  
 
-## 🚀 Features  
-✅ **Real-time Packet Capture** – Monitors incoming & outgoing traffic  
-✅ **Anomaly Detection** – Flags unusually large packets as potential threats  
-✅ **User-Friendly GUI** – Displays alerts with severity levels (Low, Medium, High)  
-✅ **Threat Logging** – Saves anomalous activity to a log file  
+---
 
-## 🖥️ Screenshots  
-*(Add screenshots of the GUI in action)*  
+## 🛠️ Installation & Setup
 
-## Example Logs Outputs
-⚠️ [HIGH] Anomaly Detected! Large packet from 192.168.1.10 to 8.8.8.8 (Size: 1200)
-This could indicate an attack or abnormal network behavior. Please investigate further.
+### 🔹 Prerequisites
+Ensure you have the following installed:
+- **Python 3.x** ([Download Here](https://www.python.org/downloads/))
+- **Git** ([Download Here](https://git-scm.com/downloads))
+- **Required Python Libraries**
 
-## 📂 Installation & Usage  
+### 🔹 Installation Steps
 
-### 1️⃣ Install Dependencies  
-Ensure you have Python installed, then run:  
-```bash
-pip install scapy joblib
+1️⃣ **Clone the Repository**  
+```sh
+git clone https://github.com/adamharith73/network-anomaly-detector.git
+cd network-anomaly-detector
+```
+
+2️⃣ **Install Dependencies**  
+```sh
+pip install -r requirements.txt
+```
+
+3️⃣ **Run the Application**  
+```sh
+python main.py
+```
+
+---
+
+## 🚀 How to Use
+
+1️⃣ **Start the Capture**  
+   - Click **"▶ Start Capture"** to begin monitoring network traffic.  
+   
+2️⃣ **Detect Anomalies**  
+   - The app will log packets and highlight potential threats.  
+   - Alerts will indicate severity levels:
+     - 🟡 **Low** – Slightly unusual activity.  
+     - 🟠 **Medium** – Suspicious behavior detected.  
+     - 🔴 **High** – Possible attack, requires immediate attention.  
+
+3️⃣ **Stop Capture & Analyze Logs**  
+   - Click **"⏹ Stop Capture"** to end monitoring.  
+   - View the saved logs in `anomaly_log.txt` for analysis.  
+
+---
+
+## ⚡ Future Enhancements
+🔹 Machine Learning integration for smarter threat detection.  
+🔹 Graphical visualization of network traffic.  
+🔹 IP reputation check to validate suspicious connections.  
+
+---
+
+### 🔗 Contributing & Support
+Want to improve this project? Feel free to contribute!  
+For issues or suggestions, create a GitHub **Issue** or **Pull Request**.  
+
+---
+
+### 📜 License
+This project is licensed under the **MIT License**.
+
 
